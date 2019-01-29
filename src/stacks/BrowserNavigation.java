@@ -8,7 +8,7 @@ import java.util.Scanner;
  * Simulates a browser's back and forward buttons by recording links that are visited
  * and then keeping a stack of "back" links and a stack of "forward" links.
  *
- * @author Foothill College, Bita M, [YOUR NAME HERE]
+ * @author Foothill College, Bita M, William Tsai
  */
 public class BrowserNavigation 
 {
@@ -124,10 +124,10 @@ public class BrowserNavigation
 	{
 		// TODO: Test all features of the Navigator class
 		//       This includes testing for boundary conditions.
-		final String FILENAME = "resources/links.txt";
+		//final String FILENAME = "resources/links.txt";
 
 		// NOTE: An example of testing the boundary condition when back links stack is empty
-		//final String FILENAME = "resources/popEmptyStackOfLinks.txt";
+		final String FILENAME = "resources/popEmptyStackOfLinks.txt";
 
 		// TODO: Provide test input files in addition to those provide.
 		// final String FILENAME = ??
