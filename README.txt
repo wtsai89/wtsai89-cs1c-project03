@@ -1,8 +1,26 @@
-// TODO: For every project create a README file at the top-level directory of 
-//       your project. Your README must include a list of .java files you are 
-//       submitting and a brief description of each. You may ignore IDE specific 
-//       files such as .gitignore 
+project folder:
+wtsai89-cs1c-project03/
 
-// NOTE: Alternatively you can create this file in Markdown format. 
-//       See the tutorial:
-//       https://guides.github.com/features/mastering-markdown/
+
+Brief description of submitted files:
+
+src/stacks/BrowserNavigation.java
+    - Simulates a browser's back and forward buttons by recording links that are visited and then keeping a stack of "back" links and a stack of "forward" links.
+
+src/stacks/Navigator.java
+    - Provides the navigation feature of class BrowserNavigation.
+
+src/stacks/StackList.java
+    - Manages items in a singly linked list where we can only push() and pop() items from one end of the stack.
+
+resources/links.txt
+    - Test input file
+
+resources/popEmptyStackOfLinks.txt
+    - Test input file
+
+resources/mylinks.txt
+    - Test input file
+
+resources/RUN.txt
+    - Output of BrowserNavigation class

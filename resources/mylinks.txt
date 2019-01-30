@@ -1,0 +1,12 @@
+back
+link www.yahoo.com
+link www.google.com
+back
+forward
+link www.amazon.com
+link www.msn.com
+back
+back
+forward
+forward
+forward

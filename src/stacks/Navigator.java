@@ -1,11 +1,17 @@
 package stacks;
 
+/**
+ * Provides the navigation feature of class BrowserNavigation.
+ */
 public class Navigator {
 
     private String currentLink;
     private StackList<String> backLinks;
     private StackList<String> forwardLinks;
 
+    /**
+     * Default constructor
+     */
     public Navigator()
     {
         currentLink = null;
@@ -13,6 +19,10 @@ public class Navigator {
         forwardLinks = new StackList<String>("Forward Links");
     }
 
+    /**
+     * Takes an object of type String​ for the current requested link and updates the backLinks and forwardLinks stacks.
+     * @param link
+     */
     public void setCurrentLink(String link)
     {
         if(currentLink != null)
@@ -21,9 +31,11 @@ public class Navigator {
         currentLink = link;
     }
 
+    /**
+     * Updates the currentLink to the link at the top of the backLinks stack
+     */
     public void goBack()
     {
-
         if(backLinks.size() == 0)
             System.out.println("WARNING! No back links left.");
         else {
@@ -32,6 +44,9 @@ public class Navigator {
         }
     }
 
+    /**
+     * Updates the currentLink to the link at the top of the forwardLinks stack
+     */
     public void goForward()
     {
         if(forwardLinks.size() == 0)
@@ -42,9 +57,21 @@ public class Navigator {
         }
     }
 
+    /**
+     * accessor method
+     * @return
+     */
     public String getCurrentLink(){ return currentLink; }
 
+    /**
+     * accessor method
+     * @return
+     */
     public StackList<String> getBackLinks() { return backLinks; }
 
+    /**
+     * accessor method
+     * @return
+     */
     public StackList<String> getForwardLinks() { return forwardLinks; }
 }
